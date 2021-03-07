@@ -2,6 +2,7 @@
 
 import Vue from 'vue'
 import CucumberButton from './components/CButton';
+import CucumberCollapse from './components/CCollapse';
 import CucumberStyles from "./css/cucumber.css";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -13,6 +14,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 const Components = {
     CucumberButton,
+    CucumberCollapse
 }
 
 Object.keys(Components).forEach(name => {
