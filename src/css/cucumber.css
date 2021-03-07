@@ -1,0 +1,9 @@
+.cucumber {
+    --cucumber-color: #4cbb17;
+}
+
+.cucumber-label {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}

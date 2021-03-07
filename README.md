@@ -1,24 +1,30 @@
 # cucumber-components
 
-## Project setup
+Vue component library example for Digit Koodikerho.  
+This simple project was set up using Vue CLI 3 and Vue Styleguidist plugin.
+
+## Getting started
+
+### Install dependencies
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start Styleguidist server
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm run styleguide
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Configuring Styleguidist
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Styleguidist environment can be configured in `styleguide.config.js`   
+[Vue Styleguidist documentation](https://vue-styleguidist.github.io/Configuration.html)
+
+## Publishing
+
+You need Vue CLI 3 to run the build script.
+
+1. Import and register your components globally in `./src/index.js`
+2. Build as library `npm run build`
+3. Publish to npm `npm publish`
