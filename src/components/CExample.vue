@@ -1,8 +1,8 @@
 <template>
-	<div class="cucumber">
-		<!-- @slot Example slot -->
-		<slot></slot>
-	</div>
+  <div class="cucumber">
+    <!-- @slot Example slot -->
+    <slot />
+  </div>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ Style variables:
 __--example-variable__: example css variable documentation
 */
 export default {
-	name: 'CucumberExample',
+  name: 'CucumberExample',
 }
 </script>
 

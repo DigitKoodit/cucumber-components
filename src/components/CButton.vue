@@ -1,8 +1,13 @@
 <template>
-	<button class="cucumber button cucumber-label" v-bind:class="buttonStyle" v-on:click="handleClick" :disabled="disabled">
-		<!-- @slot Button content -->
-		<slot></slot>
-	</button>
+  <button
+    class="cucumber button cucumber-label"
+    :class="buttonStyle"
+    :disabled="disabled"
+    @click="handleClick"
+  >
+    <!-- @slot Button content -->
+    <slot />
+  </button>
 </template>
 
 <script>
@@ -13,50 +18,50 @@ Style variables:
 __--primary-color__: Sets the primary color of the button
 */
 export default {
-	name: 'CucumberButton',
-	props: {
-		/**
+  name: 'CucumberButton',
+  props: {
+    /**
 		 * Inverted style with transparent background and primary color outline.
 		 */
-		inverted: {
-			type: Boolean,
-			default: false,
-		},
-		/**
+    inverted: {
+      type: Boolean,
+      default: false,
+    },
+    /**
 		 * Square-shaped style
 		 */
-		square: {
-			type: Boolean,
-			default: false,
-		},
-		/**
+    square: {
+      type: Boolean,
+      default: false,
+    },
+    /**
 		 * If true, this button will not be clickable
 		 */
-		disabled: {
-			type: Boolean,
-			default: false,
-		},
-	},
-	computed: {
-		buttonStyle() {
-			return {
-				'inverted': this.inverted,
-				'square': this.square,
-				'disabled': this.disabled,
-			}
-		},
-	},
-	methods: {
-		handleClick(e) {
-				if (!this.disabled) {
-				/** Triggered when button is clicked
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    buttonStyle() {
+      return {
+        'inverted': this.inverted,
+        'square': this.square,
+        'disabled': this.disabled,
+      }
+    },
+  },
+  methods: {
+    handleClick(e) {
+      if (!this.disabled) {
+        /** Triggered when button is clicked
 				 * @event click
 				 * @type {Event}
 				 */
-				this.$emit('click', e)
-			}
-		}
-	}
+        this.$emit('click', e)
+      }
+    }
+  }
 }
 </script>
 

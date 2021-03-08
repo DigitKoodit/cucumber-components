@@ -12,14 +12,14 @@ library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 const Components = {
-    CucumberButton,
+  CucumberButton,
 }
 
 Object.keys(Components).forEach(name => {
-    Vue.component(name, Components[name])
+  Vue.component(name, Components[name])
 })
 
 export default {
-    Components,
-    CucumberStyles
+  Components,
+  CucumberStyles
 }
