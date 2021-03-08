@@ -1,17 +1,11 @@
 {
   "name": "cucumber-components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vue Component Library Example",
   "private": false,
   "main": "dist/cucumber-components.umd.js",
   "author": "Jarkko Pietilä",
   "license": "MIT",
-  "files": [
-    "dist/*",
-    "src/*",
-    "*.json",
-    "*.js"
-  ],
   "scripts": {
     "build": "vue-cli-service build --target lib --name 'cucumber-components' ./src/index.js",
     "lint": "vue-cli-service lint",
