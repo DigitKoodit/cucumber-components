@@ -12,7 +12,7 @@ You should be fine running the styleguide with just npm. However Vue CLI (requir
 If you have npm and Node.js installed, install Vue CLI 3
 
 ```
-npm install -g @vue/cli 3.12.1)
+npm install -g @vue/cli@3.12.1
 ```
 
 ### Install dependencies
